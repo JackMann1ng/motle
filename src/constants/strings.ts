@@ -1,27 +1,27 @@
-export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
+export const GAME_TITLE = "Motle"
 
-export const WIN_MESSAGES = ['Great Job!', 'Awesome', 'Well done!']
+export const WIN_MESSAGES = ['Très Bien!', 'Magnifique', 'Bon Travail!']
 export const GAME_COPIED_MESSAGE = 'Game copied to clipboard'
-export const NOT_ENOUGH_LETTERS_MESSAGE = 'Not enough letters'
-export const WORD_NOT_FOUND_MESSAGE = 'Word not found'
+export const NOT_ENOUGH_LETTERS_MESSAGE = 'pas assez de lettres'
+export const WORD_NOT_FOUND_MESSAGE = 'Mot Introuvable'
 export const HARD_MODE_ALERT_MESSAGE =
   'Hard Mode can only be enabled at the start!'
 export const HARD_MODE_DESCRIPTION =
-  'Any revealed hints must be used in subsequent guesses'
-export const HIGH_CONTRAST_MODE_DESCRIPTION = 'For improved color vision'
+  'Tous les indices révélés doivent être utilisés dans les suppositions ultérieures'
+export const HIGH_CONTRAST_MODE_DESCRIPTION = 'Pour une meilleure vision des couleurs'
 export const CORRECT_WORD_MESSAGE = (solution: string) =>
-  `The word was ${solution}`
+  `Le mot était ${solution}`
 export const WRONG_SPOT_MESSAGE = (guess: string, position: number) =>
-  `Must use ${guess} in position ${position}`
+  `Doit utiliser ${guess} en position ${position}`
 export const NOT_CONTAINED_MESSAGE = (letter: string) =>
-  `Guess must contain ${letter}`
-export const ENTER_TEXT = 'Enter'
-export const DELETE_TEXT = 'Delete'
-export const STATISTICS_TITLE = 'Statistics'
-export const GUESS_DISTRIBUTION_TEXT = 'Guess Distribution'
-export const NEW_WORD_TEXT = 'New word in'
-export const SHARE_TEXT = 'Share'
-export const TOTAL_TRIES_TEXT = 'Total tries'
-export const SUCCESS_RATE_TEXT = 'Success rate'
-export const CURRENT_STREAK_TEXT = 'Current streak'
-export const BEST_STREAK_TEXT = 'Best streak'
+  `Supposition doit contenir ${letter}`
+export const ENTER_TEXT = 'Entrer'
+export const DELETE_TEXT = 'Éliminer'
+export const STATISTICS_TITLE = 'Statistiques'
+export const GUESS_DISTRIBUTION_TEXT = 'Répartition devinée'
+export const NEW_WORD_TEXT = 'Nouveau mot dans'
+export const SHARE_TEXT = 'Partager'
+export const TOTAL_TRIES_TEXT = 'Nombre total d\'essais'
+export const SUCCESS_RATE_TEXT = 'Taux de réussite'
+export const CURRENT_STREAK_TEXT = 'Série actuelle'
+export const BEST_STREAK_TEXT = 'Meilleure séquence'

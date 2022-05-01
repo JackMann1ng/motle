@@ -76,13 +76,25 @@ export const Keyboard = ({
         ))}
       </div>
       <div className="flex justify-center">
+        {['ç', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'œ'].map((key) => (
+          <Key
+            value={key.toUpperCase()}
+            key={key.toUpperCase()}
+            onClick={onClick}
+            status={charStatuses[key]}
+            isRevealing={isRevealing}
+          />
+        ))}
+        
+      </div>
+      <div className="flex justify-center mb-1">
         <Key width={65.4} value="ENTER" onClick={onClick}>
           {ENTER_TEXT}
         </Key>
-        {['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map((key) => (
+        {['É', 'È', 'ë', 'ê', 'à', 'â', 'ô'].map((key) => (
           <Key
-            value={key}
-            key={key}
+            value={key.toUpperCase()}
+            key={key.toUpperCase()}
             onClick={onClick}
             status={charStatuses[key]}
             isRevealing={isRevealing}
